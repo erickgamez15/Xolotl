@@ -6,8 +6,14 @@ navToogle.addEventListener("click", () =>{
     navMenu.classList.toggle("navMenuVisible")
 })
 
-//Animaciones en JS
+//Cambio de color de la navBar
+window.addEventListener('scroll', function(){
+    let header = this.document.querySelector('header')
+    let windowPosition = window.scrollY > 600
+    header.classList.toggle('scrolling-active', windowPosition)
+})
 
+//Animaciones
 window.sr = ScrollReveal();
     sr.reveal('.nav', {
         duration: 1000,
@@ -34,29 +40,4 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'rigth',
         distance: '-100px'
-    });    
-
-
-//Animaciones en JS nosotros / about
-
-const cartas = document.querySelector('.cartas');
-console.log(cartas.children[0]);
-
-window.sr = ScrollReveal();
-    sr.reveal('.cartas', {
-        duration: 3000,
-        origin: 'top',
-        distance: '-100px'
     });
-
-//Animaciones en JS servicios / services
-
-window.sr = ScrollReveal();
-    sr.reveal('.container-services', {
-        duration: 3000,
-        origin: 'top',
-        distance: '-100px'
-    });
-
-//Animaciones en JS FAQ 
-
