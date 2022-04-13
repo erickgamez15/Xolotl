@@ -18,14 +18,7 @@ ul, li{
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.scrolling-active{
-    background-color: #7fb5b5;
-}
-
-.scrolling-active .navItem{
-    font-weight: 575;
+    z-index: 100;
 }
 
 .nav{
@@ -40,7 +33,7 @@ ul, li{
 
 .logo{
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 575;
     padding: 0 25px;
     line-height: 80px;
 }
@@ -56,7 +49,7 @@ ul, li{
 
 .navItem{
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 575;
     margin: 0 10px;
     line-height: 80px;
 }
@@ -70,6 +63,21 @@ ul, li{
     background-color: #ffffff;
     color: #000000;
     transition: 0.5s;
+}
+
+/* Color Change navBar */
+.scrolling-active{
+    background-color: #7fb5b5;
+}
+
+.scrolling-active .navItem{
+    font-weight: 575;
+}
+
+.nav-pages{
+    display: flex;
+    justify-content: space-between;
+    background-color: #7fb5b5;
 }
 
 /* First Section */
@@ -117,7 +125,7 @@ ul, li{
 
 /* Second Section */
 h1{
-    border-bottom: 10px solid #7fb5b5;;
+    border-bottom: 10px solid #7fb5b5;
     width: 315px;
     font-weight: 575;
     display: inline-block;
@@ -142,14 +150,13 @@ h1{
     margin: 2em 0;
     font-size: 20px;
     font-weight: 575;
-    text-justify:newspaper;
+    text-justify: newspaper;
 }
 
 #secondButton{
     border: 2px solid rgba(0, 0, 0, 1);
     padding: 0.6em 2.5em;
     margin: auto;
-    opacity: 0.8;
     color: #000000;
     text-decoration: none;
     border-radius: 50px;
@@ -159,6 +166,7 @@ h1{
 }
 
 #secondButton:hover{
+    border: 2px solid rgba(0, 0, 0, 1);
     background: #000000;
     color: #ffffff;
 }
@@ -174,9 +182,10 @@ h1{
 
 /* Third Section */
 #thirdTitle{
-    border-bottom: 10px solid #7fb5b5;;
+    border-bottom: 10px solid #7fb5b5;
     width: 350px;
     font-weight: 575;
+    color: #ffffff;
     display: inline-block;
 }
 
@@ -186,7 +195,7 @@ h1{
     display: flex;
     align-items: center;
     text-align: left;
-    background: center fixed url(/img/section-servicios.jpeg);
+    background: center fixed url(/img/section-servicios.jpg);
 }
 
 .thirdText{
@@ -197,16 +206,16 @@ h1{
 
 #thirdText{
     margin: 2em 0;
-    font-size: 25px;
-    font-weight: 575;
+    font-size: 30px;
+    font-weight: 475;
+    color: #ffffff;
 }
 
 #thirdButton{
-    border: 2px solid rgba(0, 0, 0, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
     padding: 0.6em 2.5em;
     margin: auto;
-    opacity: 0.8;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 575;
@@ -215,8 +224,22 @@ h1{
 }
 
 #thirdButton:hover{
-    background: #000000;
-    color: #ffffff;
+    background: #ffffff;
+    color: #000000;
+}
+
+/* About */
+.titleAbout{
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    z-index: -10;
 }
 
 /* Mobile Desing*/
@@ -252,11 +275,9 @@ h1{
         margin-right: 0px;
         background-color: #7fb5b5;
         position: fixed;
-        right: 0;
-        top: 50px;
-        width: 40%;
+        top: 40px;
+        width: 35%;
         padding: 0.6em 2.5em;
-        /*border-radius: 7.5%;*/
         right: 100%;
         transition: 0.5s;
     }
@@ -286,8 +307,8 @@ h1{
     }
 
     #firstText{
-        font-size: 25px;
-        font-weight: 475;
+        font-size: 20px;
+        font-weight: 575;
     }
 
     #firstButton{
@@ -317,6 +338,24 @@ h1{
         display: none;
     }
 
+    #thirdTitle{
+        width: 210px;
+    }
+
+    .thirdText{
+        display: fixed;
+    }
+
+    #thirdText{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #thirdButton{
+        font-weight: 475;
+        font-size: 15px;
+    }
+
     @media (max-width: 500px){
         h1{
             width: 150px;
@@ -338,7 +377,6 @@ h1{
     
         #thirdText{
             font-size: 15px;
-            font-weight: 375;
         }
 
         #thirdButton{
