@@ -11,9 +11,16 @@ ul, li{
     list-style: none;
 }
 
+h1{
+    border-bottom: 10px solid #7fb5b5;
+    width: 315px;
+    font-weight: 575;
+    display: inline-block;
+}
+
 /* Header */
 .header{
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -22,6 +29,8 @@ ul, li{
 }
 
 .nav{
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -32,10 +41,10 @@ ul, li{
 }
 
 .logo{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 575;
     padding: 0 25px;
-    line-height: 80px;
+    line-height: 50px;
 }
 
 .logo:hover{
@@ -48,10 +57,10 @@ ul, li{
 }
 
 .navItem{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 575;
     margin: 0 10px;
-    line-height: 80px;
+    line-height: 50px;
 }
 
 .navMenuLink{
@@ -74,7 +83,18 @@ ul, li{
     font-weight: 575;
 }
 
+.header-pages{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
 .nav-pages{
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #7fb5b5;
@@ -124,13 +144,6 @@ ul, li{
 }
 
 /* Second Section */
-h1{
-    border-bottom: 10px solid #7fb5b5;
-    width: 315px;
-    font-weight: 575;
-    display: inline-block;
-}
-
 .second{
     margin: 0 auto;
     width: 80%;
@@ -229,9 +242,13 @@ h1{
 }
 
 /* About */
-.titleAbout{
+.about{
+    background-color: #eaf3f2;
+}
+
+.titlePages{
     padding-top: 150px;
-    margin: 0 auto;
+    margin: auto auto;
     width: 80%;
     text-align: center;
 }
@@ -239,7 +256,61 @@ h1{
 .container{
     width: 100%;
     margin: 0 auto;
-    z-index: -10;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    color: #eaf3f2;
+    font-weight: 475;
+    width: 25rem;
+    background-color: #7fb5b5 !important;
+}
+
+/* Services */
+.services{
+    background-color: #eaf3f2;
+}
+
+#initial-text{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.container-services{
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #D9F0FD;
+    clip-path: polygon(0 80px, 100% 0, 100% 750px, 0 100%);
+}
+
+.service{
+    width: 100%;
+    display: flex;
+}
+
+/* FAQ */
+.questions-answer{
+    background-color: #eaf3f2;
+}
+
+#initial-text{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: bold;
+    color: #7fb5b5;
+}
+
+.answer{
+    text-align: justify;
+    font-size: 15px;
 }
 
 /* Mobile Desing*/
@@ -249,14 +320,18 @@ h1{
     border: none;
     font-size: 30px;
     padding: 0 25px;
-    line-height: 80px;
+    line-height: 50px;
     cursor:pointer;
     display: none;
 }
 
 @media (max-width: 768px){
     .header{
-        height: 50px;
+        height: 40px;
+    }
+
+    .nav{
+        height: 40px;
     }
     
     .logo{
@@ -294,7 +369,7 @@ h1{
 
     .navToggle{
         font-size: 25px;
-        line-height: 20px;
+        line-height: 40px;
         display: block;
     }
 
@@ -302,12 +377,20 @@ h1{
         right: 0;
     }
 
+    .header-pages{
+        height: 40px;
+    }
+    
+    .nav-pages{
+        height: 40px;
+    }
+
     .firstText{
         display: fixed;
     }
 
     #firstText{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 575;
     }
 
@@ -317,7 +400,7 @@ h1{
     }
 
     h1{
-        width: 210px;
+        width: 260px;
     }
     
     .secondText{
@@ -339,7 +422,7 @@ h1{
     }
 
     #thirdTitle{
-        width: 210px;
+        width: 270px;
     }
 
     .thirdText{
@@ -356,9 +439,39 @@ h1{
         font-size: 15px;
     }
 
-    @media (max-width: 500px){
+    .titlePages{
+        padding-top: 50px;
+    }
+
+    .card{
+        font-weight: 375;
+        width: 15rem;
+    }
+
+    #initial-text{
+        font-size: 25px;
+    }
+
+    .container-services{
+        clip-path: polygon(0 80px, 100% 0, 100% 750px, 0 100%);
+    }
+    
+    .service{
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .question{
+        font-size: 20px;
+    }
+    
+    .answer{
+        font-size: 15px;
+    }
+
+    @media (max-width: 480px){
         h1{
-            width: 150px;
+            width: 205px;
         }
     
         #secondText{
@@ -372,7 +485,7 @@ h1{
         }
 
         #thirdTitle{
-            width: 150px;
+            width: 220px;
         }
     
         #thirdText{
@@ -382,6 +495,25 @@ h1{
         #thirdButton{
             font-weight: 375;
             font-size: 15px;
+        }
+        
+        .card{
+            width: 9.75rem;
+            margin: 5px 5px;
+            font-size: 15px;
+            font-weight: 175;
+        }
+
+        #initial-text{
+            font-size: 15px;
+        }
+
+        .container-services{
+            clip-path: polygon(0 80px, 100% 0, 100% 780px, 0 100%);
+        }
+        
+        .service{
+            font-size: 12px;
         }
     }
 }
