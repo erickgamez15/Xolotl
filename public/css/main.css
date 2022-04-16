@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+/* Basic styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+
+h1{
+    border-bottom: 10px solid #7fb5b5;
+    width: 315px;
+    font-weight: 575;
+    display: inline-block;
+}
+
+/* Header */
+.header{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-Link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 575;
+    padding: 0 25px;
+    line-height: 50px;
+}
+
+.logo:hover{
+    color: #ffffff;
+}
+
+.navMenu{
+    display: flex;
+    margin-right: 25px;
+}
+
+.navItem{
+    font-size: 20px;
+    font-weight: 575;
+    margin: 0 10px;
+    line-height: 50px;
+}
+
+.navMenuLink{
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.navMenuLink:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s;
+}
+
+/* Color Change navBar */
+.scrolling-active{
+    background-color: #7fb5b5;
+}
+
+.scrolling-active .navItem{
+    font-weight: 575;
+}
+
+.header-pages{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-pages{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7fb5b5;
+}
+
+/* First Section */
+.first{
+    width: 100%;
+    height: 665px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background: center fixed url(../img/hero.jpg);
+}
+
+.firstText{
+    width: 90%;
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+#firstText{
+    opacity: 0.8;
+    margin: 2em 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#firstButton{
+    border: 2px solid rgba(255, 255, 255, 1);
+    padding: 0.6em 2.5em;
+    margin: auto;
+    opacity: 0.8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 575;
+    font-size: 0.9em;
+    transition: 0.5s;   
+}
+
+#firstButton:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+/* Second Section */
+.second{
+    margin: 0 auto;
+    width: 80%;
+    height: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondText{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#secondText{
+    margin: 2em 0;
+    font-size: 20px;
+    font-weight: 575;
+    text-justify: newspaper;
+}
+
+#secondButton{
+    border: 2px solid rgba(0, 0, 0, 1);
+    padding: 0.6em 2.5em;
+    margin: auto;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 575;
+    font-size: 0.9em;
+    transition: 0.5s;   
+}
+
+#secondButton:hover{
+    border: 2px solid rgba(0, 0, 0, 1);
+    background: #000000;
+    color: #ffffff;
+}
+
+.image.right img{
+    width: 100%;
+}
+
+.image img{
+    border-radius: 0.25em;
+    display: flex;
+}
+
+/* Third Section */
+#thirdTitle{
+    border-bottom: 10px solid #7fb5b5;
+    width: 350px;
+    font-weight: 575;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.third{
+    width: 100%;
+    height: 685px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background: center fixed url(../img/section-servicios.jpg);
+}
+
+.thirdText{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#thirdText{
+    margin: 2em 0;
+    font-size: 30px;
+    font-weight: 475;
+    color: #ffffff;
+}
+
+#thirdButton{
+    border: 2px solid rgba(255, 255, 255, 1);
+    padding: 0.6em 2.5em;
+    margin: auto;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 575;
+    font-size: 0.9em;
+    transition: 0.5s;   
+}
+
+#thirdButton:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+/* About */
+.about{
+    background-color: #eaf3f2;
+}
+
+.titlePages{
+    padding-top: 150px;
+    margin: auto auto;
+    width: 80%;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    color: #eaf3f2;
+    font-weight: 475;
+    width: 25rem;
+    background-color: #7fb5b5 !important;
+}
+
+/* Services */
+.services{
+    background-color: #eaf3f2;
+}
+
+#initial-text{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.container-services{
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #D9F0FD;
+    clip-path: polygon(0 80px, 100% 0, 100% 750px, 0 100%);
+}
+
+.service{
+    width: 100%;
+    display: flex;
+}
+
+/* FAQ */
+.questions-answer{
+    background-color: #eaf3f2;
+}
+
+#initial-text{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: bold;
+    color: #7fb5b5;
+}
+
+.answer{
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Footer */
+footer.footer{
+    
+    background-color: #eaf3f2;
+}
+
+.logo-footer a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.logo-footer:hover a{
+    color: #000000;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon{
+    color: #000000;
+    transition: .5s;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon-facebook:hover{
+    color: #3b5998;
+    margin-bottom: -10px;
+}
+
+.icon-twitter:hover{
+    color: #00acee;
+}
+
+.icon-whatsapp:hover{
+    color: #25D366;
+}
+
+.icon-location-dot:hover{
+    color: red;
+}
+
+.extra-info{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* Mobile Desing*/
+.navToggle{
+    color: #ffffff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 25px;
+    line-height: 50px;
+    cursor:pointer;
+    display: none;
+}
+
+@media (max-width: 768px){
+    .header{
+        height: 40px;
+    }
+
+    .nav{
+        height: 40px;
+    }
+    
+    .logo{
+        font-size: 30px;
+        padding: 0 15px;
+        line-height: 40px;
+    }
+    
+    .logo:hover{
+        color: #ffffff;
+    }
+    
+    .navMenu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        background-color: #7fb5b5;
+        position: fixed;
+        top: 40px;
+        width: 35%;
+        padding: 0.6em 2.5em;
+        right: 100%;
+        transition: 0.5s;
+    }
+    
+    .navItem{
+        font-size: 15px;
+        line-height: 35px;
+    }
+    
+    .navMenuLink:hover{
+        background-color: #eaf3f2;
+        color: #000000;
+    }
+
+    .navToggle{
+        font-size: 25px;
+        line-height: 40px;
+        display: block;
+    }
+
+    .navMenuVisible{
+        right: 0;
+    }
+
+    .header-pages{
+        height: 40px;
+    }
+    
+    .nav-pages{
+        height: 40px;
+    }
+
+    .firstText{
+        display: fixed;
+    }
+
+    #firstText{
+        font-size: 25px;
+        font-weight: 575;
+    }
+
+    #firstButton{
+        font-weight: 475;
+        font-size: 15px;
+    }
+
+    h1{
+        width: 260px;
+    }
+    
+    .secondText{
+        display: fixed;
+    }
+
+    #secondText{
+        font-size: 20px;
+        font-weight: 475;
+    }
+
+    #secondButton{
+        font-weight: 475;
+        font-size: 15px;
+    }
+
+    .image img{
+        display: none;
+    }
+
+    #thirdTitle{
+        width: 270px;
+    }
+
+    .thirdText{
+        display: fixed;
+    }
+
+    #thirdText{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #thirdButton{
+        font-weight: 475;
+        font-size: 15px;
+    }
+
+    .titlePages{
+        padding-top: 50px;
+    }
+
+    .card{
+        font-weight: 375;
+        width: 15rem;
+    }
+
+    #initial-text{
+        font-size: 25px;
+    }
+
+    .container-services{
+        clip-path: polygon(0 80px, 100% 0, 100% 750px, 0 100%);
+    }
+    
+    .service{
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .question{
+        font-size: 20px;
+    }
+    
+    .answer{
+        font-size: 15px;
+    }
+
+    footer.footer{
+        height: 15px;
+    }
+    
+    .logo-footer a{
+        font-size: 20px;
+    }
+    
+    .icon{
+        font-size: 20px;
+    }
+    
+    .extra-info{
+        font-size: 15px;
+    }
+
+    @media (max-width: 480px){
+        h1{
+            width: 205px;
+        }
+    
+        #secondText{
+            font-size: 15px;
+            font-weight: 375;
+        }
+
+        #secondButton{
+            font-weight: 475;
+            font-size: 15px;
+        }
+
+        #thirdTitle{
+            width: 220px;
+        }
+    
+        #thirdText{
+            font-size: 15px;
+        }
+
+        #thirdButton{
+            font-weight: 375;
+            font-size: 15px;
+        }
+        
+        .card{
+            width: 9.75rem;
+            margin: 5px 5px;
+            font-size: 15px;
+            font-weight: 175;
+        }
+
+        #initial-text{
+            font-size: 15px;
+        }
+
+        .container-services{
+            clip-path: polygon(0 80px, 100% 0, 100% 780px, 0 100%);
+        }
+        
+        .service{
+            font-size: 12px;
+        }
+    }
+}
