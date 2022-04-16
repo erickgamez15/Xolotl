@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #eaf3f2 !important;
+}
+
 ul, li{
     list-style: none;
 }
@@ -19,6 +23,11 @@ h1{
 }
 
 /* Header */
+
+header img{
+    max-width: 100px;
+}
+
 .header{
     height: 60px;
     width: 100%;
@@ -271,6 +280,13 @@ h1{
 }
 
 /* Services */
+
+.service{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .services{
     background-color: #eaf3f2;
 }
@@ -318,6 +334,11 @@ footer.footer{
     
     background-color: #eaf3f2;
 }
+
+footer img{
+    max-width: 150px;
+}
+
 
 .logo-footer a{
     text-decoration: none;
