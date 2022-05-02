@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #eaf3f2 !important;
+}
+
 ul, li{
     list-style: none;
 }
@@ -19,6 +23,14 @@ h1{
 }
 
 /* Header */
+
+header img{
+    max-width: 200px;
+    padding: 10px 25px;
+    line-height: 50px;
+
+}
+
 .header{
     height: 60px;
     width: 100%;
@@ -38,17 +50,6 @@ h1{
 .nav-Link{
     color: #ffffff;
     text-decoration: none;
-}
-
-.logo{
-    font-size: 40px;
-    font-weight: 575;
-    padding: 0 25px;
-    line-height: 50px;
-}
-
-.logo:hover{
-    color: #ffffff;
 }
 
 .navMenu{
@@ -271,6 +272,13 @@ h1{
 }
 
 /* Services */
+
+.service{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .services{
     background-color: #eaf3f2;
 }
@@ -314,20 +322,9 @@ h1{
 }
 
 /* Footer */
-footer.footer{
-    
-    background-color: #eaf3f2;
-}
 
-.logo-footer a{
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.logo-footer:hover a{
-    color: #000000;
+footer img{
+    max-width: 125px;
 }
 
 .icons{
@@ -386,15 +383,11 @@ footer.footer{
     .nav{
         height: 40px;
     }
-    
-    .logo{
-        font-size: 30px;
-        padding: 0 15px;
-        line-height: 40px;
-    }
-    
-    .logo:hover{
-        color: #ffffff;
+
+    header img{
+        max-width: 125px;
+        padding-left: 15px;
+        line-height: 35px;
     }
     
     .navMenu{
@@ -526,8 +519,8 @@ footer.footer{
         height: 15px;
     }
     
-    .logo-footer a{
-        font-size: 20px;
+    footer img{
+        max-width: 85px;
     }
     
     .icon{
