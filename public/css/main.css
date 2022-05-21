@@ -375,6 +375,19 @@ footer img{
     display: none;
 }
 
+/* Formulario */
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px; 
+}
+
+.izq-formulario{
+    background-image: url(../img/formulario.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (max-width: 768px){
     .header{
         height: 40px;
@@ -529,6 +542,14 @@ footer img{
     
     .extra-info{
         font-size: 15px;
+    }
+
+    .izq-formulario{
+        display: none;
+    }
+
+    .formulario{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     @media (max-width: 480px){
